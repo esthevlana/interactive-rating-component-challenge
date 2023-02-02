@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --mediumGrey: hsla(216, 12%, 54%, 0.205);
+    --darkBlue: hsl(213, 19%, 18%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--veryDarkBlue);
+    color: var(--white);
+    font-family: Overpass;
+    line-height: 1.8rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.container {
+    min-height: 100vh;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.evaluation-card, .thanks-card {
+    background-color: var(--darkBlue);
+    border-radius: 18px;
+    max-width: 100%;
+    width: min(100%, 420px);
+    padding: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+}
+
+.evaluation-card {
+    display: block;
+}
+
+.thanks-card img {
+    width: 40%;
+    padding: 0;
+    margin: 0 auto 1.8rem auto;
+}
+
+.thanks-card {
+    text-align: center;
+    display: none;
+}
+
+.circle-star {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 1.6rem 0;
+    background-color: var(--mediumGrey);
+    border-radius: 50%;
+    padding: 1em;
+}
+  
+  .circle {
+    background-color: var(--mediumGrey);
+    border-radius: 50%;
+    padding: 0.5em 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+  }
+  
+  .circle:hover {
+    background-color: var(--lightGrey);
+    color: var(--white);
+  }
+
+  .circle:active {
+    background-color: var(--orange);
+    color: var(--white);
+  }
+
+  .selected {
+    background-color: var(--orange);
+    color: var(--white);
+  }
+
+  .evaluation-card button {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--white);
+    background-color: var(--orange);
+    border: none;
+    width: 100%;
+    padding: 1em;
+    border-radius: 2em;
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+  }
+  
+.evaluation-card button:active {
+    background-color: var(--white);
+    color: var(--orange);
+  }
+  
+.evaluation-card button:hover {
+    cursor: pointer;
+  }
+
+
+.numbers-choice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.numbers-choice, p {
+    color: var(--lightGrey);
+}
+
+
+input[type="radio"]{
+    display: none;
+  }
+
+div.rating-text .rating {
+    display: inline-block;
+    background-color: var(--mediumGrey);
+    color: var(--orange);
+    border-radius: 12px;
+    padding: 0.1rem 1rem;
+    text-align: center;
+    margin-bottom: 1.6rem;
+  }
+  
+
+footer { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+footer a { 
+    color: hsl(228, 45%, 44%); 
+}
