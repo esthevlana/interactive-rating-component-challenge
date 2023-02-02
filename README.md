@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://github.com/esthevlana/interactive-rating-component-challenge)
-- Live Site URL: [Live Site URL](https://esthevlana.github.io/interactive-rating-component-challenge/)
+- [Solution URL](https://github.com/esthevlana/interactive-rating-component-challenge)
+- [Live Site URL](https://esthevlana.github.io/interactive-rating-component-challenge/)
 
 ## My process
 
